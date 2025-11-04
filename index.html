@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sparkle & Shine: Your Property Transformed. Professional painting and cleaning services with fast completion, meticulous attention to detail, and personalized quotes.">
+    <meta name="keywords" content="painting, cleaning, property transformation, professional services">
+    <meta name="author" content="Sparkle & Shine">
+    <title>Sparkle & Shine: Your Property Transformed | Professional Painting & Cleaning</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800;900&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .shimmer-effect {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .shimmer-effect::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            animation: shimmer 3s infinite;
+        }
+        
+        @keyframes shimmer {
+            0% { left: -100%; }
+            100% { left: 100%; }
+        }
+        
+        .hero-pattern {
+            background-image: 
+                radial-gradient(circle at 20% 50%, rgba(102, 126, 234, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(118, 75, 162, 0.1) 0%, transparent 50%);
+        }
+        
+        .faq-icon {
+            transition: transform 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900">
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <!-- Logo -->
+            <div class="flex items-center space-x-2">
+                <div class="w-10 h-10 bg-gradient-to-br from-purple-600 to-pink-600 rounded-lg flex items-center justify-center">
+                    <i class="fas fa-sparkles text-white text-lg"></i>
+                </div>
+                <span class="text-xl font-bold gradient-text">Sparkle & Shine</span>
+            </div>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#features" class="text-gray-700 hover:text-purple-600 transition-colors duration-300 font-medium">Features</a>
+                <a href="#benefits" class="text-gray-700 hover:text-purple-600 transition-colors duration-300 font-medium">Benefits</a>
+                <a href="#testimonials" class="text-gray-700 hover:text-purple-600 transition-colors duration-300 font-medium">Testimonials</a>
+                <a href="#faq" class="text-gray-700 hover:text-purple-600 transition-colors duration-300 font-medium">FAQ</a>
+                <a href="#about" class="text-gray-700 hover:text-purple-600 transition-colors duration-300 font-medium">About</a>
+            </div>
+
+            <!-- CTA Button Desktop -->
+            <div class="hidden md:block">
+                <a href="https://www.freshfeelpaintingandcleaning.ca/" target="_blank" rel="noopener noreferrer" class="bg-gradient-to-r from-purple-600 to-pink-600 text-white px-6 py-2 rounded-lg font-semibold hover:shadow-lg hover:scale-105 transition-all duration-300">
+                    Get Started
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden mobile-menu-button p-2 rounded-lg hover:bg-gray-100 transition-colors duration-300">
+                <i class="fas fa-bars text-gray-700 text-xl"></i>
+            </button>
+
+            <!-- Mobile Menu -->
+            <div class="mobile-menu hidden absolute top-full left-0 right-0 bg-white border-t border-gray-200 md:hidden shadow-lg">
+                <div class="flex flex-col space-y-4 px-4 py-6">
+                    <a href="#features" class="text-gray-700 hover:text-purple-600 transition-colors duration-300 font-medium">Features</a>
+                    <a href="#benefits" class="text-gray-700 hover:text-purple-600 transition-colors duration-300 font-medium">Benefits</a>
+                    <a href="#testimonials" class="text-gray-700 hover:text-purple-600 transition-colors duration-300 font-medium">Testimonials</a>
+                    <a href="#faq" class="text-gray-700 hover:text-purple-600 transition-colors duration-300 font-medium">FAQ</a>
+                    <a href="#about" class="text-gray-700 hover:text-purple-600 transition-colors duration-300 font-medium">About</a>
+                    <a href="https://www.freshfeelpaintingandcleaning.ca/" target="_blank" rel="noopener noreferrer" class="bg-gradient-to-r from-purple-600 to-pink-600 text-white px-6 py-2 rounded-lg font-semibold hover:shadow-lg hover:scale-105 transition-all duration-300 text-center">
+                        Get Started
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-pattern py-16 md:py-24 lg:py-32 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- Hero Content -->
+                <div class="space-y-6">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight">
+                        <span class="gradient-text">Sparkle & Shine:</span> Your Property Transformed
+                    </h1>
+                    <p class="text-lg md:text-xl text-gray-600 leading-relaxed">
+                        Give your home or business the radiant glow it deserves with our professional painting and cleaning services. We combine expert craftsmanship with meticulous attention to detail to create spaces that truly shine.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="https://www.freshfeelpaintingandcleaning.ca/" target="_blank" rel="noopener noreferrer" class="bg-gradient-to-r from-purple-600 to-pink-600 text-white px-8 py-4 rounded-lg font-bold text-lg hover:shadow-xl hover:scale-105 transition-all duration-300 text-center">
+                            Transform Your Space Today
+                        </a>
+                        <a href="#features" class="border-2 border-purple-600 text-purple-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-purple-50 hover:shadow-lg transition-all duration-300 text-center">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hero Image -->
+                <div class="relative">
+                    <div class="absolute inset-0 bg-gradient-to-br from-purple-200 to-pink-200 rounded-2xl blur-3xl opacity-30"></div>
+                    <div class="relative bg-gradient-to-br from-purple-100 to-pink-100 rounded-2xl p-8 md:p-12 shimmer-effect">
+                        <div class="space-y-4">
+                            <div class="h-48 md:h-64 bg-gradient-to-br from-purple-400 to-pink-400 rounded-xl flex items-center justify-center">
+                                <i class="fas fa-paint-roller text-white text-6xl md:text-8xl opacity-80"></i>
+                            </div>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="bg-white rounded-lg p-4 text-center shadow-md">
+                                    <p class="text-2xl font-bold gradient-text">500+</p>
+                                    <p class="text-sm text-gray-600">Projects Completed</p>
+                                </div>
+                                <div class="bg-white rounded-lg p-4 text-center shadow-md">
+                                    <p class="text-2xl font-bold gradient-text">4.9★</p>
+                                    <p class="text-sm text-gray-600">Client Rating</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-16 md:py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 tracking-tight">Why Choose Our Services?</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Experience excellence through our carefully crafted service features designed to exceed your expectations.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Feature 1: Fast Project Completion -->
+                <div class="group bg-white rounded-2xl p-8 shadow-md hover:shadow-2xl hover:scale-105 transition-all duration-300 cursor-pointer border border-gray-100">
+                    <div class="w-16 h-16 bg-gradient-to-br from-purple-600 to-pink-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fas fa-clock text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Fast Project Completion</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        We understand that your time is valuable. Our streamlined processes and skilled team ensure your project is completed on schedule without compromising quality. From initial consultation to final touches, we work efficiently to minimize disruption to your daily life or business operations.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li class="flex items-center space-x-2">
+                            <i class="fas fa-check text-purple-600"></i>
+                            <span>Rapid turnaround times</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fas fa-check text-purple-600"></i>
+                            <span>Minimal downtime</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fas fa-check text-purple-600"></i>
+                            <span>Professional scheduling</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Feature 2: Meticulous Attention to Detail -->
+                <div class="group bg-white rounded-2xl p-8 shadow-md hover:shadow-2xl hover:scale-105 transition-all duration-300 cursor-pointer border border-gray-100">
+                    <div class="w-16 h-16 bg-gradient-to-br from-purple-600 to-pink-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fas fa-microscope text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Meticulous Attention to Detail</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        Excellence is in the details. Our team takes pride in every brushstroke, every cleaned surface, and every finished corner. We employ rigorous quality control measures to ensure that every aspect of your project meets our exacting standards and exceeds your expectations.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li class="flex items-center space-x-2">
+                            <i class="fas fa-check text-purple-600"></i>
+                            <span>Precision craftsmanship</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fas fa-check text-purple-600"></i>
+                            <span>Quality inspections</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fas fa-check text-purple-600"></i>
+                            <span>Premium finishes</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Feature 3: Personalized Quotes -->
+                <div class="group bg-white rounded-2xl p-8 shadow-md hover:shadow-2xl hover:scale-105 transition-all duration-300 cursor-pointer border border-gray-100">
+                    <div class="w-16 h-16 bg-gradient-to-br from-purple-600 to-pink-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fas fa-file-invoice-dollar text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Personalized Quotes</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        No two projects are identical, and neither are our quotes. We provide customized, transparent pricing based on your specific needs, project scope, and budget. Our consultants work with you to create a solution that delivers maximum value and fits your financial requirements.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li class="flex items-center space-x-2">
+                            <i class="fas fa-check text-purple-600"></i>
+                            <span>Transparent pricing</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fas fa-check text-purple-600"></i>
+                            <span>No hidden fees</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fas fa-check text-purple-600"></i>
+                            <span>Flexible solutions</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 tracking-tight">Transform Your Space with Real Results</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Discover the tangible benefits that our clients experience after working with us.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Benefit 1: Lasting Beauty -->
+                <div class="relative group">
+                    <div class="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 rounded-2xl blur-lg opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+                    <div class="relative bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8 border border-blue-100 hover:border-purple-300 transition-colors duration-300">
+                        <div class="w-14 h-14 bg-gradient-to-br from-purple-600 to-pink-600 rounded-xl flex items-center justify-center mb-6">
+                            <i class="fas fa-diamond text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3">Lasting Beauty</h3>
+                        <p class="text-gray-700 leading-relaxed">
+                            Our high-quality materials and expert application techniques ensure that your property maintains its radiant appearance for years to come. We use premium paints, professional-grade cleaning solutions, and proven methods that resist fading, wear, and weathering. Your investment in beauty pays dividends through extended durability and sustained visual appeal.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Benefit 2: Hygienic Living/Working Areas -->
+                <div class="relative group">
+                    <div class="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 rounded-2xl blur-lg opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+                    <div class="relative bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-8 border border-green-100 hover:border-purple-300 transition-colors duration-300">
+                        <div class="w-14 h-14 bg-gradient-to-br from-purple-600 to-pink-600 rounded-xl flex items-center justify-center mb-6">
+                            <i class="fas fa-shield-virus text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3">Hygienic Living/Working Areas</h3>
+                        <p class="text-gray-700 leading-relaxed">
+                            A clean space is a healthy space. Our comprehensive cleaning services eliminate dust, allergens, bacteria, and harmful contaminants from every surface. Whether it's your home or business, we create an environment that promotes wellness, reduces illness transmission, and provides peace of mind for you and your loved ones or employees.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Benefit 3: Budget-Friendly Solutions -->
+                <div class="relative group">
+                    <div class="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 rounded-2xl blur-lg opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+                    <div class="relative bg-gradient-to-br from-amber-50 to-orange-50 rounded-2xl p-8 border border-amber-100 hover:border-purple-300 transition-colors duration-300">
+                        <div class="w-14 h-14 bg-gradient-to-br from-purple-600 to-pink-600 rounded-xl flex items-center justify-center mb-6">
+                            <i class="fas fa-coins text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3">Budget-Friendly Solutions</h3>
+                        <p class="text-gray-700 leading-relaxed">
+                            Premium quality doesn't have to come with a premium price tag. We offer flexible pricing options, package deals, and financing solutions to accommodate various budgets. Our efficient processes and competitive rates ensure you receive exceptional value without sacrificing quality or service excellence.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Benefits Grid -->
+            <div class="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="text-center p-6 rounded-xl bg-gray-50 hover:bg-purple-50 transition-colors duration-300">
+                    <div class="text-3xl font-bold gradient-text mb-2">10+ Years</div>
+                    <p class="text-gray-600">Industry Experience</p>
+                </div>
+                <div class="text-center p-6 rounded-xl bg-gray-50 hover:bg-purple-50 transition-colors duration-300">
+                    <div class="text-3xl font-bold gradient-text mb-2">500+</div>
+                    <p class="text-gray-600">Satisfied Clients</p>
+                </div>
+                <div class="text-center p-6 rounded-xl bg-gray-50 hover:bg-purple-50 transition-colors duration-300">
+                    <div class="text-3xl font-bold gradient-text mb-2">100%</div>
+                    <p class="text-gray-600">Satisfaction Guarantee</p>
+                </div>
+                <div class="text-center p-6 rounded-xl bg-gray-50 hover:bg-purple-50 transition-colors duration-300">
+                    <div class="text-3xl font-bold gradient-text mb-2">24/7</div>
+                    <p class="text-gray-600">Customer Support</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-16 md:py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 tracking-tight">What Our Clients Say</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Real testimonials from real customers who have experienced the Sparkle & Shine difference.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Testimonial 1 -->
+                <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 hover:scale-105">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-gradient-to-br from-purple-600 to-pink-600 rounded-full flex items-center justify-center text-white font-bold">
+                            JM
+                        </div>
+                        <div class="ml-4">
+                            <p class="font-bold text-gray-900">Jennifer Martinez</p>
+                            <p class="text-sm text-gray-600">Homeowner, Vancouver</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">
+                        "Sparkle & Shine completely transformed my living room! The attention to detail was incredible. They painted my accent wall perfectly and the cleanup was immaculate. I couldn't be happier with the results. Highly recommended!"
+                    </p>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 hover:scale-105">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-gradient-to-br from-purple-600 to-pink-600 rounded-full flex items-center justify-center text-white font-bold">
+                            DK
+                        </div>
+                        <div class="ml-4">
+                            <p class="font-bold text-gray-900">David Kim</p>
+                            <p class="text-sm text-gray-600">Business Owner, Toronto</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">
+                        "We hired them for our office renovation and they were professional, punctual, and produced exceptional results. Our workspace looks brand new. The team was respectful of our business operations and minimized disruption. Fantastic service!"
+                    </p>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 hover:scale-105">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-gradient-to-br from-purple-600 to-pink-600 rounded-full flex items-center justify-center text-white font-bold">
+                            SP
+                        </div>
+                        <div class="ml-4">
+                            <p class="font-bold text-gray-900">Sarah Patel</p>
+                            <p class="text-sm text-gray-600">Property Manager, Calgary</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">
+                        "Outstanding work on our rental properties! The cleaning service is thorough and the painting work is flawless. They've become our go-to service provider. Their personalized quotes are transparent and competitive. Five stars all the way!"
+                    </p>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 hover:scale-105">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-gradient-to-br from-purple-600 to-pink-600 rounded-full flex items-center justify-center text-white font-bold">
+                            MC
+                        </div>
+                        <div class="ml-4">
+                            <p class="font-bold text-gray-900">Michael Chen</p>
+                            <p class="text-sm text-gray-600">Restaurateur, Montreal</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">
+                        "They completed our restaurant renovation on schedule and under budget. The quality of work exceeded expectations. The team was professional, clean, and respectful of our business. They're now our preferred contractor for all future projects!"
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-16 md:py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 tracking-tight">Frequently Asked Questions</h2>
+                <p class="text-lg text-gray-600">Find answers to common questions about our painting and cleaning services.</p>
+            </div>
+
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item border border-gray-200 rounded-xl overflow-hidden hover:border-purple-300 transition-colors duration-300">
+                    <div class="faq-question cursor-pointer p-6 bg-gray-50 hover:bg-purple-50 transition-colors duration-300 flex items-center justify-between">
+                        <h3 class="text-lg font-bold text-gray-900">How long does a typical painting project take?</h3>
+                        <i class="faq-icon fas fa-chevron-down text-purple-600 transition-transform duration-300"></i>
+                    </div>
+                    <div class="faq-answer hidden p-6 bg-white border-t border-gray-200">
+                        <p class="text-gray-700 leading-relaxed">
+                            The duration of a painting project depends on several factors including the size of the area, the complexity of the work, number of coats required, and current weather conditions. A typical interior room can take 1-3 days, while larger projects may take a week or more. During your consultation, we'll provide a detailed timeline specific to your project. We pride ourselves on completing work efficiently without compromising quality, and we always communicate any changes to the schedule promptly.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="faq-item border border-gray-200 rounded-xl overflow-hidden hover:border-purple-300 transition-colors duration-300">
+                    <div class="faq-question cursor-pointer p-6 bg-gray-50 hover:bg-purple-50 transition-colors duration-300 flex items-center justify-between">
+                        <h3 class="text-lg font-bold text-gray-900">What types of cleaning services do you offer?</h3>
+                        <i class="faq-icon fas fa-chevron-down text-purple-600 transition-transform duration-300"></i>
+                    </div>
+                    <div class="faq-answer hidden p-6 bg-white border-t border-gray-200">
+                        <p class="text-gray-700 leading-relaxed">
+                            We offer comprehensive cleaning services including residential cleaning, commercial office cleaning, post-construction cleanup, deep cleaning, and specialized surface cleaning. Our services cover everything from basic dusting and vacuuming to detailed carpet cleaning, window washing, and sanitization. We use eco-friendly cleaning solutions and state-of-the-art equipment to ensure your space is not only clean but also safe and healthy. We can customize a cleaning package to meet your specific needs and budget.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="faq-item border border-gray-200 rounded-xl overflow-hidden hover:border-purple-300 transition-colors duration-300">
+                    <div class="faq-question cursor-pointer p-6 bg-gray-50 hover:bg-purple-50 transition-colors duration-300 flex items-center justify-between">
+                        <h3 class="text-lg font-bold text-gray-900">Do you provide warranty on your work?</h3>
+                        <i class="faq-icon fas fa-chevron-down text-purple-600 transition-transform duration-300"></i>
+                    </div>
+                    <div class="faq-answer hidden p-6 bg-white border-t border-gray-200">
+                        <p class="text-gray-700 leading-relaxed">
+                            Yes, we stand behind our work with a comprehensive warranty. All painting projects include a 2-year warranty covering paint quality and workmanship. If you notice any issues within this period, we'll address them at no additional cost. We use premium quality paints and materials to ensure durability and longevity. Our warranty reflects our confidence in the quality of our services and our commitment to customer satisfaction.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="faq-item border border-gray-200 rounded-xl overflow-hidden hover:border-purple-300 transition-colors duration-300">
+                    <div class="faq-question cursor-pointer p-6 bg-gray-50 hover:bg-purple-50 transition-colors duration-300 flex items-center justify-between">
+                        <h3 class="text-lg font-bold text-gray-900">Can you work around my schedule?</h3>
+                        <i class="faq-icon fas fa-chevron-down text-purple-600 transition-transform duration-300"></i>
+                    </div>
+                    <div class="faq-answer hidden p-6 bg-white border-t border-gray-200">
+                        <p class="text-gray-700 leading-relaxed">
+                            Absolutely! We understand that your time is precious, whether you're a homeowner or business owner. We offer flexible scheduling options including early morning, evening, and weekend appointments. For businesses, we can arrange work during off-hours to minimize disruption. We'll work with you to find a schedule that fits your needs. Contact us to discuss your availability, and we'll create a customized plan that works for everyone.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="faq-item border border-gray-200 rounded-xl overflow-hidden hover:border-purple-300 transition-colors duration-300">
+                    <div class="faq-question cursor-pointer p-6 bg-gray-50 hover:bg-purple-50 transition-colors duration-300 flex items-center justify-between">
+                        <h3 class="text-lg font-bold text-gray-900">How do I get a quote for my project?</h3>
+                        <i class="faq-icon fas fa-chevron-down text-purple-600 transition-transform duration-300"></i>
+                    </div>
+                    <div class="faq-answer hidden p-6 bg-white border-t border-gray-200">
+                        <p class="text-gray-700 leading-relaxed">
+                            Getting a quote is easy and free! Simply contact us via phone, email, or our website with details about your project. We can provide an initial estimate based on your description, or we can schedule an in-person consultation where our team can assess your space and provide a detailed, personalized quote. Our quotes are transparent with no hidden fees. We'll discuss all options, materials, and pricing before you decide to move forward. Most quotes are provided within 24-48 hours.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-16 md:py-24 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 tracking-tight">About Sparkle & Shine</h2>
+            </div>
+
+            <div class="space-y-8 text-lg text-gray-700 leading-relaxed">
+                <p>
+                    Sparkle & Shine was founded in 2014 by a team of passionate professionals who shared a common vision: to transform properties and create spaces that truly shine. What started as a small, family-run operation has grown into a trusted name in the painting and cleaning industry across Canada. Our journey has been built on the foundation of hard work, dedication, and an unwavering commitment to excellence. Over the past decade, we've had the privilege of serving hundreds of satisfied customers, from residential homeowners to commercial businesses, each project strengthening our reputation for quality craftsmanship and exceptional service. Today, we continue to grow while maintaining the same values and personal touch that made us successful from day one.
+                </p>
+                <p>
+                    At Sparkle & Shine, we believe that every property deserves to look and feel its best. Our mission is to provide superior painting and cleaning services that enhance the beauty, health, and value of our clients' spaces. We are committed to sustainable practices, using eco-friendly materials and methods that protect both your property and the environment. Our core values—integrity, quality, reliability, and customer satisfaction—guide every decision we make and every project we undertake. We invest in our team through continuous training and development, ensuring that every member of our crew meets our exacting standards. When you choose Sparkle & Shine, you're choosing a partner dedicated to transforming your vision into reality with professionalism, expertise, and genuine care.
+                </p>
+            </div>
+
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center p-6 bg-white rounded-xl shadow-md">
+                    <i class="fas fa-award text-4xl gradient-text mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Award-Winning Service</h3>
+                    <p class="text-gray-600">Recognized for excellence and customer satisfaction</p>
+                </div>
+                <div class="text-center p-6 bg-white rounded-xl shadow-md">
+                    <i class="fas fa-leaf text-4xl gradient-text mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Eco-Friendly Practices</h3>
+                    <p class="text-gray-600">Committed to sustainable and environmentally responsible methods</p>
+                </div>
+                <div class="text-center p-6 bg-white rounded-xl shadow-md">
+                    <i class="fas fa-handshake text-4xl gradient-text mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Trusted Partnership</h3>
+                    <p class="text-gray-600">Building long-term relationships with our valued clients</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="relative py-16 md:py-24 overflow-hidden">
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=1200&h=600&fit=crop');">
+            <div class="absolute inset-0 bg-gradient-to-r from-purple-900/90 to-pink-900/90"></div>
+        </div>
+        
+        <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 tracking-tight">Ready to Transform Your Space?</h2>
+            <p class="text-lg md:text-xl text-gray-100 mb-8 max-w-2xl mx-auto leading-relaxed">
+                Don't wait to give your property the radiant glow it deserves. Contact us today for a personalized quote and let's bring your vision to life.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://www.freshfeelpaintingandcleaning.ca/" target="_blank" rel="noopener noreferrer" class="bg-white text-purple-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 hover:shadow-xl hover:scale-105 transition-all duration-300">
+                    Get Your Free Quote
+                </a>
+                <a href="mailto:iainhmunro@gmail.com" class="border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-purple-600 hover:shadow-xl transition-all duration-300">
+                    Contact Us
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12 md:py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+                <!-- Company Info -->
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-10 h-10 bg-gradient-to-br from-purple-600 to-pink-600 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-sparkles text-white text-lg"></i>
+                        </div>
+                        <span class="text-xl font-bold text-white">Sparkle & Shine</span>
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Transforming properties with professional painting and cleaning services since 2014.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-white font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#features" class="hover:text-purple-400 transition-colors duration-300">Features</a></li>
+                        <li><a href="#benefits" class="hover:text-purple-400 transition-colors duration-300">Benefits</a></li>
+                        <li><a href="#testimonials" class="hover:text-purple-400 transition-colors duration-300">Testimonials</a></li>
+                        <li><a href="#faq" class="hover:text-purple-400 transition-colors duration-300">FAQ</a></li>
+                        <li><a href="#about" class="hover:text-purple-400 transition-colors duration-300">About Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources -->
+                <div>
+                    <h4 class="text-white font-bold mb-4">Resources</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="privacy.html" class="hover:text-purple-400 transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="hover:text-purple-400 transition-colors duration-300">Terms of Service</a></li>
+                        <li><a href="blog.html" class="hover:text-purple-400 transition-colors duration-300">Blog</a></li>
+                        <li><a href="https://www.freshfeelpaintingandcleaning.ca/" target="_blank" rel="noopener noreferrer" class="hover:text-purple-400 transition-colors duration-300">Visit Website</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-white font-bold mb-4">Contact Us</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li class="flex items-center space-x-2">
+                            <i class="fas fa-envelope text-purple-400"></i>
+                            <a href="mailto:iainhmunro@gmail.com" class="hover:text-purple-400 transition-colors duration-300">iainhmunro@gmail.com</a>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fas fa-globe text-purple-400"></i>
+                            <a href="https://www.freshfeelpaintingandcleaning.ca/" target="_blank" rel="noopener noreferrer" class="hover:text-purple-400 transition-colors duration-300">freshfeelpaintingandcleaning.ca</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Social Links -->
+            <div class="border-t border-gray-800 pt-8 mb-8">
+                <div class="flex justify-center space-x-6 mb-8">
+                    <a href="#" aria-label="Facebook" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-purple-600 transition-colors duration-300">
+                        <i class="fab fa-facebook-f text-white"></i>
+                    </a>
+                    <a href="#" aria-label="Instagram" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-purple-600 transition-colors duration-300">
+                        <i class="fab fa-instagram text-white"></i>
+                    </a>
+                    <a href="#" aria-label="Twitter" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-purple-600 transition-colors duration-300">
+                        <i class="fab fa-twitter text-white"></i>
+                    </a>
+                    <a href="#" aria-label="LinkedIn" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-purple-600 transition-colors duration-300">
+                        <i class="fab fa-linkedin-in text-white"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="border-t border-gray-800 pt-8 text-center text-sm text-gray-400">
+                <p>&copy; 2025 Sparkle & Shine. All rights reserved. | Transforming properties with excellence and care.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile Menu Toggle
+            const mobileMenuButton = document.querySelector('header nav .mobile-menu-button');
+            const mobileMenu = document.querySelector('header nav .mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+
+            // FAQ Accordion Toggle
+            const faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                if (question) {
+                    question.addEventListener('click', () => {
+                        const answer = item.querySelector('.faq-answer');
+                        const isOpen = !answer.classList.contains('hidden');
+                        
+                        // Close all other FAQ items
+                        faqItems.forEach(otherItem => {
+                            if (otherItem !== item) {
+                                otherItem.querySelector('.faq-answer')?.classList.add('hidden');
+                                otherItem.querySelector('.faq-icon')?.classList.remove('rotate-180');
+                            }
+                        });
+                        
+                        // Toggle current item
+                        answer?.classList.toggle('hidden');
+                        item.querySelector('.faq-icon')?.classList.toggle('rotate-180');
+                    });
+                }
+            });
+
+            // Smooth Scroll for Anchor Links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href !== '#' && href.length > 1) {
+                        e.preventDefault();
+                        const target = document.querySelector(href);
+                        if (target) {
+                            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
